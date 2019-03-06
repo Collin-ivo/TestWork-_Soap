@@ -1,0 +1,75 @@
+.color-selector {
+  display: flex;
+  align-items: center;
+
+  b {
+    display: block;
+    padding-left: 3px;
+    width: 82px;
+
+    font-family: $fontPTSansCaption;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+}
+
+.color-selector__list {
+  @include reset-list;
+  display: flex;
+}
+
+.color-selector__item {
+  margin: 4px;
+}
+
+.color-selector__radio {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: red;
+  border: 1px solid #979797;
+}
+
+.color-selector__item--pink {
+  .color-selector__radio {
+    background-color: #FF7F96;
+  }
+}
+.color-selector__item--violett {
+  .color-selector__radio {
+    background-color: #F7A9F8;
+  }
+}
+.color-selector__item--green {
+  .color-selector__radio {
+    background-color: #3DFFBA;
+  }
+}
+
+.color-selector__item input:checked + .color-selector__radio {
+  border: 6px solid #000000;
+}
+.color-selector__item input:disabled + .color-selector__radio {
+  opacity: 0.3;
+}
+
+.color-selector__item input:focus + .color-selector__radio {
+  outline: auto;
+  outline-color: rgb(90, 87, 253);
+}
+
+@media (min-width: $tablet-width) {
+  .color-selector {
+    b {
+      width: 98px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color-selector {
+    b {
+      width: 124px;
+    }
+  }
+}

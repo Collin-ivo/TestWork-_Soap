@@ -1,0 +1,27 @@
+.page-main {
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__wrapper {
+    max-width: 1200px;
+    padding-left: 66px;
+    padding-right: 115px;
+    padding-top: 16px;
+  }
+}
+

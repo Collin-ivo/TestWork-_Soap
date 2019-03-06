@@ -1,0 +1,20 @@
+@import "normalize.scss";
+
+@import "mixins.scss";
+@import "variables.scss";
+
+
+@import "scaffolding";
+
+
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/navigation-menu.scss";
+@import "blocks/page-main.scss";
+@import "blocks/product-card.scss";
+@import "blocks/slider.scss";
+@import "blocks/color-selector.scss";
+@import "blocks/button.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/subscribe.scss";

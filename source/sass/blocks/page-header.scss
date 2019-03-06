@@ -1,0 +1,143 @@
+.page-header {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.page-header__menu-toggle {
+  display: none;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--closed {
+    background-image: url('../img/hamburger.svg');
+  }
+  &--opened {
+    background-image: url('../img/close.svg');
+  }
+
+}
+
+.page-header__phone {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media (max-width: $mobile-width-only) {
+
+  .page-header__top-container {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__navigation {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    display: flex;
+    width: 100%;
+    min-height: 416px;
+    border-top: 1px solid #D8D8D8;
+
+    ul {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    li {
+      margin: 0;
+    }
+    li:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    a {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    &--closed,
+    &--closed + .page-header__phone {
+      display: none;
+    }
+  }
+
+  .page-header__menu-toggle {
+    display: block;
+  }
+
+  .page-header__phone {
+    width: 100%;
+    text-align: center;
+    color: #000000;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: $tablet-width;
+    margin-bottom: 36px;
+    padding-top: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .page-header__top-container {
+    margin-left: 0;
+    margin-right: 40px;
+    flex-basis: 180px;
+  }
+
+  .page-header__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-header__phone {
+    margin-right: 0;
+    flex-basis: 180px;
+  }
+
+  .page-header__navigation a {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    max-width: $desktop-width;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50px;
+  }
+}
+

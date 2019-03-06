@@ -1,0 +1,79 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/pt_mono_regular.woff2") format("woff2"), url("../fonts/pt_mono_regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/pt_mono_bold.woff2") format("woff2"), url("../fonts/pt_mono_bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/pt_sans_regular.woff2") format("woff2"), url("../fonts/pt_sans_regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/pt_sans_caption_regular.woff2") format("woff2"), url("../fonts/pt_sans_caption_regular.woff") format("woff");
+}
+
+
+body {
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $fontPTMono;
+  color: #000000;
+  font-style: normal;
+
+  background-color: #ffffff;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  transition-duration: 0.2s;
+}
+
+*::after,
+*::before {
+  transition-duration: 0.2s;
+}
