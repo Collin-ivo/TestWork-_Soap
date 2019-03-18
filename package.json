@@ -1,8 +1,8 @@
 {
-  "name": "mishka",
+  "name": "onwaytestfrontend",
   "version": "1.0.0",
   "private": true,
-  "description": "Уучебный проект Мишка",
+  "description": "Oneway-test-frontend",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp-posthtml": "^3.0.4",
